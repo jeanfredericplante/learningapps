@@ -68,6 +68,13 @@ const apps = [
     link: "https://gemini.google.com/share/f366748ae3ac",
     visualIdea: "Algebraic equation being solved step-by-step.",
     image: "step2step.png"
+  },
+  {
+    name: "MathMover",
+    description: "Interactive practice for solving one-step algebraic equations. Helps students visualize the movement of numbers across the equals sign.",
+    link: "https://gemini.google.com/share/00e82511cb88",
+    visualIdea: "Simple one-step equation like x + 5 = 12.",
+    image: "mathmover.png"
   }
 ];
 
