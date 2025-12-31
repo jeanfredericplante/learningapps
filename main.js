@@ -61,6 +61,13 @@ const apps = [
     link: "https://jeanfredericplante.github.io/scrambled_book/",
     visualIdea: "Scrambled letters being arranged on lined paper.",
     image: "scrambled_book.png"
+  },
+  {
+    name: "Step2Step",
+    description: "Interactive practice for solving two-step algebraic equations. visualizes the process of isolating the variable to solve for x.",
+    link: "https://gemini.google.com/share/f366748ae3ac",
+    visualIdea: "Algebraic equation being solved step-by-step.",
+    image: "step2step.png"
   }
 ];
 
