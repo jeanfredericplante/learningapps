@@ -82,6 +82,13 @@ const apps = [
     link: "https://gemini.google.com/share/692b83acf0af",
     visualIdea: "A 2x2 grid pattern rotating 90 degrees clockwise.",
     image: "tumbling.png"
+  },
+  {
+    name: "Animal Code Breaker",
+    description: "A logic puzzle game where players deduce a secret code of animals. Promotes critical thinking and pattern recognition through deductive reasoning.",
+    link: "https://gemini.google.com/share/1fc0656d496f",
+    visualIdea: "A grid of animal faces with feedback icons.",
+    image: "animal_code_breaker.png"
   }
 ];
 
