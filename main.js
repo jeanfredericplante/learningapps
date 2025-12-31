@@ -57,7 +57,7 @@ const apps = [
   },
   {
     name: "Scrambled Book",
-    description: "Create handwriting worksheets for children. Helps practice sentence structure and handwriting by rearranging scrambled words.",
+    description: "Create handwriting worksheets for children. Helps practice spelling and handwriting by rearranging scrambled letters to form words.",
     link: "https://jeanfredericplante.github.io/scrambled_book/",
     visualIdea: "Scrambled letters being arranged on lined paper.",
     image: "scrambled_book.png"
