@@ -47,6 +47,20 @@ const apps = [
     link: "https://gemini.google.com/share/d6b61415f148",
     visualIdea: "A \"machine\" graphic where a word enters one side and comes out with a new suffix or prefix on the other.",
     image: "word_transformers.png"
+  },
+  {
+    name: "Break The Code",
+    description: "Generate secret message worksheets with math problems. Engages logical thinking and math skills to decode hidden messages.",
+    link: "https://jeanfredericplante.github.io/breakthecode/",
+    visualIdea: "Mathematical symbols forming a lock or code.",
+    image: "break_the_code.png"
+  },
+  {
+    name: "Scrambled Book",
+    description: "Create handwriting worksheets for children. Helps practice sentence structure and handwriting by rearranging scrambled words.",
+    link: "https://jeanfredericplante.github.io/scrambled_book/",
+    visualIdea: "Scrambled letters being arranged on lined paper.",
+    image: "scrambled_book.png"
   }
 ];
 
