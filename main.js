@@ -75,6 +75,13 @@ const apps = [
     link: "https://gemini.google.com/share/00e82511cb88",
     visualIdea: "Simple one-step equation like x + 5 = 12.",
     image: "mathmover.png"
+  },
+  {
+    name: "Tumbling",
+    description: "A spatial reasoning puzzle requiring users to predict the next state of a rotating pattern. Enhances visuospatial skills and mental rotation abilities.",
+    link: "https://gemini.google.com/share/692b83acf0af",
+    visualIdea: "A 2x2 grid pattern rotating 90 degrees clockwise.",
+    image: "tumbling.png"
   }
 ];
 
