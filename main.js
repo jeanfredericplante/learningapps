@@ -89,6 +89,13 @@ const apps = [
     link: "https://gemini.google.com/share/1fc0656d496f",
     visualIdea: "A grid of animal faces with feedback icons.",
     image: "animal_code_breaker.png"
+  },
+  {
+    name: "Finish the Analogy",
+    description: "A language logic game where players identify relationships between words. Circle the best word to complete the analogy (e.g., Book is to Read as TV is to Watch).",
+    link: "https://gemini.google.com/share/b46c965d668d",
+    visualIdea: "Analogy question card like 'Book is to read as TV is to ___'.",
+    image: "finish_the_analogy.png"
   }
 ];
 
