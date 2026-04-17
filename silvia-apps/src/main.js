@@ -2,12 +2,6 @@ import './style.css'
 
 const apps = [
   {
-    name: "Rhyme Time",
-    description: "Focuses on phonological awareness, helping users identify and create rhyming patterns.",
-    link: "https://g.co/gemini/share/cfd579a3536d",
-    icon: "🎵"
-  },
-  {
     name: "Focus Reading",
     description: "Designed to enhance reading comprehension. It uses \"show, not tell\" strategies.",
     link: "https://g.co/gemini/share/87a3f71600b2",
@@ -28,7 +22,7 @@ const apps = [
   {
     name: "Adverb Adventure",
     description: "A targeted grammar app for understanding and using adverbs modifying actions.",
-    link: "https://g.co/gemini/share/cda394d71fd9",
+    link: "https://gemini.google.com/share/e732514d2f12",
     icon: "🏃"
   },
   {
@@ -44,16 +38,28 @@ const apps = [
     icon: "✨"
   },
   {
-    name: "Scrambled Book",
-    description: "Create handwriting worksheets for children to practice spelling and handwriting.",
-    link: "https://jeanfredericplante.github.io/scrambled_book/",
-    icon: "📝"
+    name: "Finish The Analogy",
+    description: "A language logic game where players identify relationships between words.",
+    link: "https://gemini.google.com/share/7b20f97e4f36",
+    icon: "⚖️"
   },
   {
-    name: "Finish the Analogy",
-    description: "A language logic game where players identify relationships between words.",
-    link: "https://gemini.google.com/share/b46c965d668d",
-    icon: "⚖️"
+    name: "Grammar Detective",
+    description: "A fun, engaging tool that challenges users to identify and correct grammatical patterns in sentences.",
+    link: "https://gemini.google.com/share/9a6358202b85",
+    icon: "🕵️"
+  },
+  {
+    name: "Word Morph",
+    description: "Focuses on visual word recognition and pattern variations to build vocabulary flexibly.",
+    link: "https://gemini.google.com/share/575ca9ece3e7",
+    icon: "🦋"
+  },
+  {
+    name: "Rhyme Time!",
+    description: "Focuses on phonological awareness, helping users identify and create rhyming patterns.",
+    link: "https://gemini.google.com/share/f53b3bc06a76",
+    icon: "🎵"
   }
 ];
 
