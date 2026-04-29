@@ -8,10 +8,10 @@ const apps = [
     icon: "🔍"
   },
   {
-    name: "Vocabulary Match-up Game",
-    description: "A gamified tool for learning and reinforcing vocabulary by connecting words with meanings.",
-    link: "https://g.co/gemini/share/99db7dfe24b5",
-    icon: "🧩"
+    name: "Interactive Image Describer",
+    description: "A collaborative descriptive tool where the AI generates or analyzes descriptions alongside the user.",
+    link: "https://gemini.google.com/share/8146480688ec",
+    icon: "🤖"
   },
   {
     name: "Describe The Picture",
@@ -24,12 +24,6 @@ const apps = [
     description: "A targeted grammar app for understanding and using adverbs modifying actions.",
     link: "https://gemini.google.com/share/e732514d2f12",
     icon: "🏃"
-  },
-  {
-    name: "Interactive Image Describer",
-    description: "A collaborative descriptive tool where the AI generates or analyzes descriptions alongside the user.",
-    link: "https://gemini.google.com/share/8146480688ec",
-    icon: "🤖"
   },
   {
     name: "Word Transformers",
@@ -56,13 +50,19 @@ const apps = [
     icon: "🦋"
   },
   {
+    name: "Vocabulary Match-up Game",
+    description: "A gamified tool for learning and reinforcing vocabulary by connecting words with meanings.",
+    link: "https://g.co/gemini/share/99db7dfe24b5",
+    icon: "🧩"
+  },
+  {
     name: "Rhyme Time!",
     description: "Focuses on phonological awareness, helping users identify and create rhyming patterns.",
     link: "https://gemini.google.com/share/99f3400dd275",
     icon: "🎵"
   },
   {
-    name: "Phrase Connect",
+    name: "Phrase Connect - Gestalt",
     description: "An interactive educational app that challenges users to match pairs of phrases with equivalent meanings to help with language comprehension.",
     link: "https://gemini.google.com/share/50e687f3b52c",
     icon: "🔗"
