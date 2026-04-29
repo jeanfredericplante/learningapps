@@ -4,7 +4,7 @@ const apps = [
   {
     name: "Focus Reading",
     description: "Designed to enhance reading comprehension. It uses \"show, not tell\" strategies.",
-    link: "https://g.co/gemini/share/87a3f71600b2",
+    link: "https://gemini.google.com/share/96545033768c",
     icon: "🔍"
   },
   {
