@@ -40,7 +40,7 @@ const apps = [
   {
     name: "Finish The Analogy",
     description: "A language logic game where players identify relationships between words.",
-    link: "https://gemini.google.com/share/7b20f97e4f36",
+    link: "https://gemini.google.com/share/a6f0503b1b93",
     icon: "⚖️"
   },
   {
