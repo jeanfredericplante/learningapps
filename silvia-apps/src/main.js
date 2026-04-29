@@ -58,7 +58,7 @@ const apps = [
   {
     name: "Rhyme Time!",
     description: "Focuses on phonological awareness, helping users identify and create rhyming patterns.",
-    link: "https://gemini.google.com/share/f53b3bc06a76",
+    link: "https://gemini.google.com/share/99f3400dd275",
     icon: "🎵"
   },
   {
