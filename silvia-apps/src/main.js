@@ -60,6 +60,18 @@ const apps = [
     description: "Focuses on phonological awareness, helping users identify and create rhyming patterns.",
     link: "https://gemini.google.com/share/f53b3bc06a76",
     icon: "🎵"
+  },
+  {
+    name: "Phrase Connect",
+    description: "An interactive educational app that challenges users to match pairs of phrases with equivalent meanings to help with language comprehension.",
+    link: "https://gemini.google.com/share/50e687f3b52c",
+    icon: "🔗"
+  },
+  {
+    name: "Mission Control",
+    description: "An interactive educational app that allows users to embark on various scientific and historical repair missions to earn energy.",
+    link: "https://gemini.google.com/share/16167406d74c",
+    icon: "🚀"
   }
 ];
 
