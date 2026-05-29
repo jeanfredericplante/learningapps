@@ -1,14 +1,15 @@
 import { describe, test, expect } from 'vitest';
-import { apps } from './main.js';
+import { apps as rootApps } from './main.js';
+import { apps as silviaApps } from './silvia-apps/src/main.js';
 
-describe('Silvia\'s App Portfolio Integrity', () => {
-  test('apps should be an array', () => {
-    expect(Array.isArray(apps)).toBe(true);
-    expect(apps.length).toBeGreaterThan(0);
+describe('Root Portfolio Integrity', () => {
+  test('rootApps should be a valid array', () => {
+    expect(Array.isArray(rootApps)).toBe(true);
+    expect(rootApps.length).toBeGreaterThan(0);
   });
 
-  test('all apps should have required fields', () => {
-    apps.forEach(app => {
+  test('all root apps should have required fields', () => {
+    rootApps.forEach(app => {
       expect(app.name).toBeDefined();
       expect(typeof app.name).toBe('string');
       expect(app.name.trim().length).toBeGreaterThan(0);
@@ -34,12 +35,47 @@ describe('Silvia\'s App Portfolio Integrity', () => {
     });
   });
 
-  test('should contain the new "Where Are They?" app with correct details', () => {
-    const whereAreThey = apps.find(app => app.name === 'Where Are They?');
+  test('should contain the new "Where Are They?" app in root portfolio', () => {
+    const whereAreThey = rootApps.find(app => app.name === 'Where Are They?');
     expect(whereAreThey).toBeDefined();
     expect(whereAreThey.category).toBe('Math & Logic');
     expect(whereAreThey.image).toBe('where_are_they.png');
     expect(whereAreThey.link).toBe('https://gemini.google.com/share/7a956c4fa3e7');
     expect(whereAreThey.description).toContain('hidden-object search game');
+  });
+});
+
+describe('Silvia Sub-Portfolio Integrity', () => {
+  test('silviaApps should be a valid array', () => {
+    expect(Array.isArray(silviaApps)).toBe(true);
+    expect(silviaApps.length).toBeGreaterThan(0);
+  });
+
+  test('all silvia-apps should have required fields', () => {
+    silviaApps.forEach(app => {
+      expect(app.name).toBeDefined();
+      expect(typeof app.name).toBe('string');
+      expect(app.name.trim().length).toBeGreaterThan(0);
+
+      expect(app.description).toBeDefined();
+      expect(typeof app.description).toBe('string');
+      expect(app.description.trim().length).toBeGreaterThan(0);
+
+      expect(app.link).toBeDefined();
+      expect(typeof app.link).toBe('string');
+      expect(app.link.startsWith('http://') || app.link.startsWith('https://')).toBe(true);
+
+      expect(app.icon).toBeDefined();
+      expect(typeof app.icon).toBe('string');
+      expect(app.icon.trim().length).toBeGreaterThan(0);
+    });
+  });
+
+  test('should contain the new "Where Are They?" app in Silvia sub-portfolio', () => {
+    const whereAreThey = silviaApps.find(app => app.name === 'Where Are They?');
+    expect(whereAreThey).toBeDefined();
+    expect(whereAreThey.icon).toBe('👀');
+    expect(whereAreThey.link).toBe('https://gemini.google.com/share/7a956c4fa3e7');
+    expect(whereAreThey.description).toContain('search-and-find game');
   });
 });
