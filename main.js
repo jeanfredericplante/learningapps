@@ -1,4 +1,4 @@
-const apps = [
+export const apps = [
   {
     name: "Rhyme Time",
     description: "Focuses on phonological awareness, helping users identify and create rhyming patterns. It leverages pattern-seeking strengths to build foundations for reading and language.",
@@ -110,40 +110,50 @@ const apps = [
     visualIdea: "Analogy question card like 'Book is to read as TV is to ___'.",
     image: "finish_the_analogy.png",
     category: "Language & Literacy"
+  },
+  {
+    name: "Where Are They?",
+    description: "An engaging hidden-object search game. Players scan detailed thematic landscapes to find hidden characters (like Sam, Dany, and Alex), exercising visual scanning, attention to detail, and spatial reasoning.",
+    link: "https://gemini.google.com/share/7a956c4fa3e7",
+    visualIdea: "A magnifying glass focusing on characters hidden in a prehistoric landscape of trees and small huts.",
+    image: "where_are_they.png",
+    category: "Math & Logic"
   }
 ];
 
 const categories = ["Language & Literacy", "Math & Logic"];
 
-document.querySelector('#app').innerHTML = `
-  <header>
-    <h1>Learning Adventures</h1>
-    <p class="subtitle">Neurodiversity-affirming educational apps powered by AI</p>
-  </header>
-  <main>
-    ${categories.map(category => `
-      <section class="category-section">
-        <h2 class="category-title">${category}</h2>
-        <div class="app-grid">
-          ${apps
-            .filter(app => app.category === category)
-            .map(app => `
-              <article class="app-card">
-                <div class="card-image-container">
-                  ${app.image
-                    ? `<img src="${app.image}" alt="${app.name}" class="card-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/202c44/FFF?text=${encodeURIComponent(app.name)}'">`
-                    : `<div style="width:100%;height:100%;background:linear-gradient(45deg, var(--primary-accent), var(--secondary-accent));opacity:0.2;"></div>`
-                  }
-                </div>
-                <div class="card-content">
-                  <h2 class="app-title">${app.name}</h2>
-                  <p class="app-description">${app.description}</p>
-                  <a href="${app.link}" class="glow-button" target="_blank">Launch App</a>
-                </div>
-              </article>
-            `).join('')}
-        </div>
-      </section>
-    `).join('')}
-  </main>
-`;
+if (typeof document !== 'undefined') {
+  document.querySelector('#app').innerHTML = `
+    <header>
+      <h1>Learning Adventures</h1>
+      <p class="subtitle">Neurodiversity-affirming educational apps powered by AI</p>
+    </header>
+    <main>
+      ${categories.map(category => `
+        <section class="category-section">
+          <h2 class="category-title">${category}</h2>
+          <div class="app-grid">
+            ${apps
+              .filter(app => app.category === category)
+              .map(app => `
+                <article class="app-card">
+                  <div class="card-image-container">
+                    ${app.image
+                      ? `<img src="${app.image}" alt="${app.name}" class="card-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/202c44/FFF?text=${encodeURIComponent(app.name)}'">`
+                      : `<div style="width:100%;height:100%;background:linear-gradient(45deg, var(--primary-accent), var(--secondary-accent));opacity:0.2;"></div>`
+                    }
+                  </div>
+                  <div class="card-content">
+                    <h2 class="app-title">${app.name}</h2>
+                    <p class="app-description">${app.description}</p>
+                    <a href="${app.link}" class="glow-button" target="_blank">Launch App</a>
+                  </div>
+                </article>
+              `).join('')}
+          </div>
+        </section>
+      `).join('')}
+    </main>
+  `;
+}
