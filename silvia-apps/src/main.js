@@ -63,7 +63,7 @@ export const apps = [
   },
   {
     name: "Phrase Connect - Gestalt",
-    description: "An interactive educational app that challenges users to match pairs of phrases with equivalent meanings to help with language comprehension.",
+    description: "Challenges users to match pairs of phrases with equivalent meanings to help with language comprehension.",
     link: "https://gemini.google.com/share/50e687f3b52c",
     icon: "🔗"
   },
