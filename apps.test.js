@@ -67,6 +67,11 @@ describe('Root Portfolio Integrity', () => {
     expect(describer).toBeDefined();
     expect(describer.link).toBe('https://gemini.google.com/share/6fabcf377050?skid=504000b5-1069-452c-ba8d-13860b916a92');
   });
+
+  test('should not contain "Describe The Picture" in root portfolio', () => {
+    const describePic = rootApps.find(app => app.name === 'Describe The Picture');
+    expect(describePic).toBeUndefined();
+  });
 });
 
 describe('Silvia Sub-Portfolio Integrity', () => {
@@ -123,5 +128,10 @@ describe('Silvia Sub-Portfolio Integrity', () => {
     const describer = silviaApps.find(app => app.name === 'Interactive Image Describer');
     expect(describer).toBeDefined();
     expect(describer.link).toBe('https://gemini.google.com/share/6fabcf377050?skid=504000b5-1069-452c-ba8d-13860b916a92');
+  });
+
+  test('should not contain "Describe The Picture" in Silvia sub-portfolio', () => {
+    const describePic = silviaApps.find(app => app.name === 'Describe The Picture');
+    expect(describePic).toBeUndefined();
   });
 });

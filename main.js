@@ -24,14 +24,6 @@ export const apps = [
     category: "Language & Literacy"
   },
   {
-    name: "Describe The Picture",
-    description: "Encourages expressive language development by prompting users to describe visual scenes. It provides functional sentence starters or \"gestalts\" (e.g., \"I see...\") to help model communication.",
-    link: "https://gemini.google.com/share/60bf4ab07498",
-    visualIdea: "A framed picture of a simple landscape with a speech bubble coming from it.",
-    image: "describe_picture.png",
-    category: "Language & Literacy"
-  },
-  {
     name: "Adverb Adventure",
     description: "A targeted grammar app for understanding and using adverbs. It uses interactive examples to demonstrate how adverbs modify actions, which is helpful for students who struggle with abstract grammatical concepts.",
     link: "https://g.co/gemini/share/cda394d71fd9",

@@ -14,12 +14,6 @@ export const apps = [
     icon: "🤖"
   },
   {
-    name: "Describe The Picture",
-    description: "Encourages expressive language development by prompting users to describe visual scenes.",
-    link: "https://gemini.google.com/share/60bf4ab07498",
-    icon: "🖼️"
-  },
-  {
     name: "Adverb Adventure",
     description: "A targeted grammar app for understanding and using adverbs modifying actions.",
     link: "https://gemini.google.com/share/e732514d2f12",
