@@ -42,7 +42,7 @@ export const apps = [
   {
     name: "Interactive Image Describer",
     description: "A collaborative descriptive tool where the AI generates or analyzes descriptions alongside the user. This supports language modeling by providing immediate feedback and visual-textual associations.",
-    link: "https://gemini.google.com/share/8146480688ec",
+    link: "https://gemini.google.com/share/6fabcf377050?skid=504000b5-1069-452c-ba8d-13860b916a92",
     visualIdea: "Chat bubbles + image.",
     image: "interactive_describer.png",
     category: "Language & Literacy"
@@ -118,6 +118,22 @@ export const apps = [
     visualIdea: "A magnifying glass focusing on characters hidden in a prehistoric landscape of trees and small huts.",
     image: "where_are_they.png",
     category: "Math & Logic"
+  },
+  {
+    name: "Match the Meaning",
+    description: "An interactive matching game where learners match common signs and expressions to their literal meanings, supporting language comprehension and practical communication.",
+    link: "https://gemini.google.com/share/3fdd5d5f14f2?skid=2eedd434-b010-4e01-8b69-6ffff14f4c9b",
+    visualIdea: "Drag-and-drop matching interface connecting expressions to their meanings.",
+    image: "match_the_meaning.png",
+    category: "Language & Literacy"
+  },
+  {
+    name: "What Do You Feel Like Doing?",
+    description: "An engaging communication tool that helps learners explore and express their current desires and intentions using the 'I feel like...' sentence pattern.",
+    link: "https://gemini.google.com/share/65507ed2f3a5?skid=df4528c1-59dc-46f9-8e48-0f9d669e00d0",
+    visualIdea: "Interactive cards illustrating activities and items with 'I feel like...' sentence starters.",
+    image: "what_do_you_feel_like_doing.png",
+    category: "Language & Literacy"
   }
 ];
 

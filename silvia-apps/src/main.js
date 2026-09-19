@@ -10,7 +10,7 @@ export const apps = [
   {
     name: "Interactive Image Describer",
     description: "A collaborative descriptive tool where the AI generates or analyzes descriptions alongside the user.",
-    link: "https://gemini.google.com/share/8146480688ec",
+    link: "https://gemini.google.com/share/6fabcf377050?skid=504000b5-1069-452c-ba8d-13860b916a92",
     icon: "🤖"
   },
   {
@@ -78,6 +78,18 @@ export const apps = [
     description: "A search-and-find game that challenges players to find hidden characters in detailed landscapes.",
     link: "https://gemini.google.com/share/7a956c4fa3e7",
     icon: "👀"
+  },
+  {
+    name: "Match the Meaning",
+    description: "An interactive matching game where learners match common environmental and social expressions to their literal meanings.",
+    link: "https://gemini.google.com/share/3fdd5d5f14f2?skid=2eedd434-b010-4e01-8b69-6ffff14f4c9b",
+    icon: "🪧"
+  },
+  {
+    name: "What Do You Feel Like Doing?",
+    description: "A communication tool that helps learners explore and express their current desires using the 'I feel like...' sentence pattern.",
+    link: "https://gemini.google.com/share/65507ed2f3a5?skid=df4528c1-59dc-46f9-8e48-0f9d669e00d0",
+    icon: "💭"
   }
 ];
 

@@ -43,6 +43,30 @@ describe('Root Portfolio Integrity', () => {
     expect(whereAreThey.link).toBe('https://gemini.google.com/share/7a956c4fa3e7');
     expect(whereAreThey.description).toContain('hidden-object search game');
   });
+
+  test('should contain "Match the Meaning" in root portfolio', () => {
+    const matchTheMeaning = rootApps.find(app => app.name === 'Match the Meaning');
+    expect(matchTheMeaning).toBeDefined();
+    expect(matchTheMeaning.category).toBe('Language & Literacy');
+    expect(matchTheMeaning.image).toBe('match_the_meaning.png');
+    expect(matchTheMeaning.link).toBe('https://gemini.google.com/share/3fdd5d5f14f2?skid=2eedd434-b010-4e01-8b69-6ffff14f4c9b');
+    expect(matchTheMeaning.description.toLowerCase()).toContain('match');
+  });
+
+  test('should contain "What Do You Feel Like Doing?" in root portfolio', () => {
+    const feelLikeDoing = rootApps.find(app => app.name === 'What Do You Feel Like Doing?');
+    expect(feelLikeDoing).toBeDefined();
+    expect(feelLikeDoing.category).toBe('Language & Literacy');
+    expect(feelLikeDoing.image).toBe('what_do_you_feel_like_doing.png');
+    expect(feelLikeDoing.link).toBe('https://gemini.google.com/share/65507ed2f3a5?skid=df4528c1-59dc-46f9-8e48-0f9d669e00d0');
+    expect(feelLikeDoing.description.toLowerCase()).toContain('feel like');
+  });
+
+  test('should have updated link for "Interactive Image Describer" in root portfolio', () => {
+    const describer = rootApps.find(app => app.name === 'Interactive Image Describer');
+    expect(describer).toBeDefined();
+    expect(describer.link).toBe('https://gemini.google.com/share/6fabcf377050?skid=504000b5-1069-452c-ba8d-13860b916a92');
+  });
 });
 
 describe('Silvia Sub-Portfolio Integrity', () => {
@@ -77,5 +101,27 @@ describe('Silvia Sub-Portfolio Integrity', () => {
     expect(whereAreThey.icon).toBe('👀');
     expect(whereAreThey.link).toBe('https://gemini.google.com/share/7a956c4fa3e7');
     expect(whereAreThey.description).toContain('search-and-find game');
+  });
+
+  test('should contain "Match the Meaning" in Silvia sub-portfolio', () => {
+    const matchTheMeaning = silviaApps.find(app => app.name === 'Match the Meaning');
+    expect(matchTheMeaning).toBeDefined();
+    expect(matchTheMeaning.icon).toBe('🪧');
+    expect(matchTheMeaning.link).toBe('https://gemini.google.com/share/3fdd5d5f14f2?skid=2eedd434-b010-4e01-8b69-6ffff14f4c9b');
+    expect(matchTheMeaning.description.toLowerCase()).toContain('match');
+  });
+
+  test('should contain "What Do You Feel Like Doing?" in Silvia sub-portfolio', () => {
+    const feelLikeDoing = silviaApps.find(app => app.name === 'What Do You Feel Like Doing?');
+    expect(feelLikeDoing).toBeDefined();
+    expect(feelLikeDoing.icon).toBe('💭');
+    expect(feelLikeDoing.link).toBe('https://gemini.google.com/share/65507ed2f3a5?skid=df4528c1-59dc-46f9-8e48-0f9d669e00d0');
+    expect(feelLikeDoing.description.toLowerCase()).toContain('feel like');
+  });
+
+  test('should have updated link for "Interactive Image Describer" in Silvia sub-portfolio', () => {
+    const describer = silviaApps.find(app => app.name === 'Interactive Image Describer');
+    expect(describer).toBeDefined();
+    expect(describer.link).toBe('https://gemini.google.com/share/6fabcf377050?skid=504000b5-1069-452c-ba8d-13860b916a92');
   });
 });
