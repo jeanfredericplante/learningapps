@@ -84,6 +84,12 @@ export const apps = [
     description: "A communication tool that helps learners explore and express their current desires using the 'I feel like...' sentence pattern.",
     link: "https://gemini.google.com/share/65507ed2f3a5?skid=df4528c1-59dc-46f9-8e48-0f9d669e00d0",
     icon: "💭"
+  },
+  {
+    name: "Sentence Transformer",
+    description: "A visual language game supporting Stage 4 Natural Language Acquisition through sentence transformation and copula reversal.",
+    link: "https://gemini.google.com/share/c60c7a96abb8?skid=0f8e8fa7-92f6-481e-b0e3-1366038a2d19",
+    icon: "🔄"
   }
 ];
 

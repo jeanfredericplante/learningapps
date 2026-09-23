@@ -126,6 +126,14 @@ export const apps = [
     visualIdea: "Interactive cards illustrating activities and items with 'I feel like...' sentence starters.",
     image: "what_do_you_feel_like_doing.png",
     category: "Language & Literacy"
+  },
+  {
+    name: "Sentence Transformer",
+    description: "A visual language game designed for Natural Language Acquisition (NLA) Stage 4. Helps learners explore copula reversal by connecting declarative statements with their matching question forms.",
+    link: "https://gemini.google.com/share/c60c7a96abb8?skid=0f8e8fa7-92f6-481e-b0e3-1366038a2d19",
+    visualIdea: "Two matching columns connecting statements to questions with color-coded grammar chunks.",
+    image: "sentence_transformer.png",
+    category: "Language & Literacy"
   }
 ];
 
