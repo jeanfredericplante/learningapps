@@ -72,6 +72,15 @@ describe('Root Portfolio Integrity', () => {
     const describePic = rootApps.find(app => app.name === 'Describe The Picture');
     expect(describePic).toBeUndefined();
   });
+
+  test('should contain "Sentence Transformer" in root portfolio', () => {
+    const sentenceTransformer = rootApps.find(app => app.name === 'Sentence Transformer');
+    expect(sentenceTransformer).toBeDefined();
+    expect(sentenceTransformer.category).toBe('Language & Literacy');
+    expect(sentenceTransformer.image).toBe('sentence_transformer.png');
+    expect(sentenceTransformer.link).toBe('https://gemini.google.com/share/c60c7a96abb8?skid=0f8e8fa7-92f6-481e-b0e3-1366038a2d19');
+    expect(sentenceTransformer.description.toLowerCase()).toContain('copula');
+  });
 });
 
 describe('Silvia Sub-Portfolio Integrity', () => {
@@ -133,5 +142,13 @@ describe('Silvia Sub-Portfolio Integrity', () => {
   test('should not contain "Describe The Picture" in Silvia sub-portfolio', () => {
     const describePic = silviaApps.find(app => app.name === 'Describe The Picture');
     expect(describePic).toBeUndefined();
+  });
+
+  test('should contain "Sentence Transformer" in Silvia sub-portfolio', () => {
+    const sentenceTransformer = silviaApps.find(app => app.name === 'Sentence Transformer');
+    expect(sentenceTransformer).toBeDefined();
+    expect(sentenceTransformer.icon).toBe('🔄');
+    expect(sentenceTransformer.link).toBe('https://gemini.google.com/share/c60c7a96abb8?skid=0f8e8fa7-92f6-481e-b0e3-1366038a2d19');
+    expect(sentenceTransformer.description.toLowerCase()).toContain('copula');
   });
 });
